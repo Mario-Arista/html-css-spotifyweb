@@ -6,3 +6,90 @@
 
 /* Reset rules */
 
+/* Aside rules */
+
+aside {
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    z-index: 1;
+
+    width: 230px;
+    height: calc(100vh - 90px);
+    
+    /* test */
+    background-color: red;
+}
+
+/* END Aside rules */
+
+/* Main rules */
+
+main {
+    
+    position: absolute;
+    top: 0px;
+    left: 230px;
+    
+    overflow-y: auto;
+
+    width: calc(100vw - 230px);
+    height: calc(100vh - 90px);
+    
+}
+
+/* Upgrade section - 1st Section */
+
+
+section:first-child {
+
+    width: 100%;
+    height: 90px;
+
+    z-index: 1;
+
+    /* test */
+    background-color: grey;
+}
+
+/* Albums section - 2nd Section */
+
+section:last-of-type {
+
+    width: 100%;
+
+    /* test */
+    background-color: lightcoral;
+
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+/* END Main rules */
+
+/* Player rules */
+
+.player {
+    
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+    z-index: 2;
+
+    width: 100%;
+    height: 90px;
+
+    /* test */
+    background-color: green;
+    
+}
+
+/* END Player rules */
