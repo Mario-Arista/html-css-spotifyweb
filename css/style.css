@@ -86,27 +86,24 @@ aside li {
     padding-bottom: 15px;
     vertical-align: middle;
 
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+}
+
+.title-playlist i {
+    padding-right: 8px;
+    vertical-align: middle;
+
+    font-size: 30px;
+
     color: white;
     opacity: 0.7;
 }
 
 aside .overflow {
     overflow-y: auto;
-    max-height: 300px;
 }
-
-/* Account block */
-.account {
-    position: absolute;
-    bottom: 10px;
-    left:20px;
-
-    /* test */
-    background-color: grey;
-    width: 100px;
-    height: 40px;
-}
-
 
 
 /* Playlist */
