@@ -28,7 +28,7 @@ aside {
     z-index: 1;
 
     width: 230px;
-    height: calc(100vh - 90px);
+    height: calc(100% - 90px);
     
     background-color: #000000;
 }
@@ -41,18 +41,22 @@ aside {
     width: 130px;
 }
 
+/* Home, search, library and Playlist */
+
 aside .container {
-    
-    padding-left: 15px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
 }
 
-.filters {
-    margin-bottom: 30px;
+aside .container ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
-.filters li {
+aside li {
     list-style: none;
-    padding-bottom: 12px;
 
     color: white;
     opacity: 0.7;
@@ -60,19 +64,52 @@ aside .container {
 
 .icons-aside {
     width: 20px;
-    padding-left: 6px;
     vertical-align: middle;
 } 
 
-.filter-text {
+.aside-text {
     display: inline;
     font-size: 10px;
+    font-weight: bold;
     vertical-align: middle;
 }
 
-.filters li:first-child filter-text {
-    opacity: 1;
+.playlist div:first-child {
+    
+    padding-bottom: 12px;
+
+    color: white;
+    opacity: 0.7;
 }
+
+.title-playlist {
+    padding-bottom: 15px;
+    vertical-align: middle;
+
+    color: white;
+    opacity: 0.7;
+}
+
+aside .overflow {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+/* Account block */
+.account {
+    position: absolute;
+    bottom: 10px;
+    left:20px;
+
+    /* test */
+    background-color: grey;
+    width: 100px;
+    height: 40px;
+}
+
+
+
+/* Playlist */
 
 /* END Aside rules */
 
@@ -86,7 +123,7 @@ main {
     
     overflow-y: auto;
 
-    width: calc(100vw - 230px);
+    width: calc(100% - 230px);
     height: calc(100vh - 90px);
 
     background-color: #131921;
@@ -110,7 +147,7 @@ section:first-child {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.container {
+section:first-child .container {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -428,12 +465,12 @@ nav a {
         top: 0px;
         left: 50px;
 
-        width: calc(100vw - 50px);
+        width: calc(100% - 50px);
     }
  
     
     section:first-child {
-        width: calc(100vw - 50px);
+        width: calc(100% - 50px);
     }
 
     /* Rules for Aside */
