@@ -157,6 +157,7 @@ section:last-of-type {
 
 .recently-played .container {
     justify-content: space-between;
+    align-items: flex-start;
 
     margin-bottom: 95px;
 }
@@ -164,11 +165,12 @@ section:last-of-type {
 .album {
     flex-direction: column;
     align-items: center;
+
+    width: 190px;
 }
 
 .recently-played .album-img {
-    width: 190px;
-
+    
     margin-bottom: 20px;
     
 }
@@ -178,6 +180,8 @@ section:last-of-type {
 }
 
 .album h3 {
+
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
 
@@ -187,6 +191,8 @@ section:last-of-type {
 }
 
 .album div:last-child {
+    text-align: center;
+
     font-size: 12px;
     font-weight: bold;
 
@@ -247,6 +253,7 @@ section:last-of-type {
 }
 
 .sug-album h3 {
+
     font-size: 16px;
     font-weight: bold;
 
@@ -291,13 +298,12 @@ section:last-of-type {
     /* Changed only the rules for albums */
 
     .recently-played .container {
-        justify-content: flex-start;
         
         gap: 10px;
     }
     
-    .album-img {
-        min-width: calc(100% / 6 - 10px / 6 * 5);
+    .album {
+        width: calc(100% / 6);
     }
 
     .suggested .container {
