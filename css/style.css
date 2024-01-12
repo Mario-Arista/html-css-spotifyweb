@@ -135,14 +135,63 @@ nav .container {
     /* 90px of upgrade section + 25px margin */
     margin-top: calc(25px + 90px);
 
-    
-    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    max-width: 620px;
 }
 
 nav a {
+    display: block;
+
     text-decoration: none;
+
     color: #7D7F84;
     font-size: 12px;
+    
+    margin-bottom: 4px;
+
+    padding-bottom: 4px;
+}
+
+nav hr {
+    display: none;
+    
+}
+
+nav a:first-child:after {
+    content: '';
+    display: block;
+
+    position: relative;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    
+    margin-top: 4px;
+
+    width: 40px;
+    height: 2px;
+
+    background-color: transparent;
+    
+}
+nav a:first-child:after {
+    content: '';
+    display: block;
+
+    position: relative;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    
+    margin-top: 4px;
+
+    width: 40px;
+    height: 2px;
+
+    background-color: #AAF545;
+    
 }
 
 /* Recently played  inside the Main */
@@ -339,6 +388,22 @@ nav a {
         width: calc(100% / 4 - 10px / 4 * 3);
     }
 
+     /* Changing dimansions of upgrade button */
+
+    .upgrade a {
+
+    
+        border: 1px white solid;
+        border-radius: 20px;
+    
+        padding: 10px 35px;
+    
+        font-size: 10px;
+        font-weight: bold;
+    
+        color: white;
+    }
+
 }
 
 /* Tablet: down to 768px */
@@ -401,20 +466,6 @@ nav a {
 
     .upgrade {
         margin-right: 10px;
-    }
-    
-    .upgrade a {
-
-    
-        border: 1px white solid;
-        border-radius: 20px;
-    
-        padding: 10px 35px;
-    
-        font-size: 10px;
-        font-weight: bold;
-    
-        color: white;
     }
 
 }
