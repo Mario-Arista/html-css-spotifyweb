@@ -13,12 +13,56 @@
     <!-- Aside with nav bar, playlist
     width fixed at 230px, not for mobile: collapsed -->
     <aside>
-        <div class="container flex">
 
-            <div class="logo-contain">
-                <img class="collapsed" src="./img/logo.svg" alt="extended logo">
-                <img class="hidden" src="./img/logo-small.svg" alt="logo small">
+        <div class="logo-contain">
+            <img class="collapsed" src="./img/logo.svg" alt="extended logo">
+            <img class="hidden" src="./img/logo-small.svg" alt="logo small">
+        </div>
+
+
+        <div class="container">
+
+            <ul class="filters">
+                <li>
+                    <img class="icons-aside" src="./img/home.svg" alt="">
+                    <div class="filter-text collapsed">Home</div>
+                </li>
+                <li>
+                    <img class="icons-aside" src="./img/search.svg" alt="">
+                    <div class="filter-text collapsed">Cerca</div>
+                </li>
+                <li>
+                    <img class="icons-aside" src="./img/libreria.svg" alt="">
+                    <div class="filter-text collapsed">La tua libreria</div>
+                </li>
+            </ul>
+
+            <div class="playlist flex">
+
+                <div>PLAYLIST</div>
+
+                <div>
+                    <img class="icons-aside" src="./img/home.svg" alt="">
+                    <div class="filter-text collapsed">Crea Playlist</div>
+                </div>
+
+                <ul class="filters">
+                    <li>
+                        <div class="playlist-text collapsed">Home</div>
+                    </li>
+                    <li>
+                        <div class="playlist-text collapsed">Cerca</div>
+                    </li>
+                    <li>
+                        <div class="playlist-text collapsed">La tua libreria</div>
+                    </li>
+                </ul>
+
             </div>
+
+        </div>
+
+        <div class="account">
 
         </div>
 
@@ -47,7 +91,7 @@
 
             <!-- Nav inside the second section of Main -->
             <nav>
-                <div class="container flex">
+                <div class="container">
                     <a href="*">IN EVIDENZA</a>
                     <a href="*">PODCAST</a>
                     <a href="*">CLASSIFICHE</a>

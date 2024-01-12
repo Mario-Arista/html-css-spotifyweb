@@ -30,22 +30,48 @@ aside {
     width: 230px;
     height: calc(100vh - 90px);
     
-    /* test */
     background-color: #000000;
 }
 
-aside .container {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-
-}
 
 .logo-contain {
-    margin-top: 20px;
     margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     width: 130px;
+}
+
+aside .container {
+    
+    padding-left: 15px;
+}
+
+.filters {
+    margin-bottom: 30px;
+}
+
+.filters li {
+    list-style: none;
+    padding-bottom: 12px;
+
+    color: white;
+    opacity: 0.7;
+}
+
+.icons-aside {
+    width: 20px;
+    padding-left: 6px;
+    vertical-align: middle;
+} 
+
+.filter-text {
+    display: inline;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.filters li:first-child filter-text {
+    opacity: 1;
 }
 
 /* END Aside rules */
@@ -126,7 +152,7 @@ section:last-of-type {
 
 nav .container {
     justify-content: center;
-    align-items: flex end;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 
@@ -142,8 +168,6 @@ nav .container {
 }
 
 nav a {
-    display: block;
-
     text-decoration: none;
 
     color: #7D7F84;
@@ -154,45 +178,6 @@ nav a {
     padding-bottom: 4px;
 }
 
-nav hr {
-    display: none;
-    
-}
-
-nav a:first-child:after {
-    content: '';
-    display: block;
-
-    position: relative;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%);
-    
-    margin-top: 4px;
-
-    width: 40px;
-    height: 2px;
-
-    background-color: transparent;
-    
-}
-nav a:first-child:after {
-    content: '';
-    display: block;
-
-    position: relative;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%);
-    
-    margin-top: 4px;
-
-    width: 40px;
-    height: 2px;
-
-    background-color: #AAF545;
-    
-}
 
 /* Recently played  inside the Main */
 
