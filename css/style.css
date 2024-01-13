@@ -358,6 +358,113 @@ nav a {
     
 }
 
+.player .container {
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+/* common rule */
+
+.player-icons {
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: red;
+} 
+
+.player-icons i {
+    color: white;
+    opacity: 0.7;
+}
+
+/* Left player */
+
+.left-player {
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 230px;
+    
+
+     /* test */
+    color: pink;
+}
+
+
+.left-album {
+    align-content: center;
+    gap: 10px;
+
+    color: white;
+    opacity: 0.7;
+}
+
+.left-album img {
+    width: 40px;
+}
+
+.left-icons {
+    align-content: center;
+    justify-content: space-around;
+    gap: 10px;
+
+    color: white;
+    opacity: 0.7;
+}
+
+/* Center player */
+
+.center-player {
+    width: 550px;
+
+    /* test */
+    color: green;
+}
+
+/* Right player */
+
+.right-player {
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+
+    width: 230px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+
+     /* test */
+    color: pink;
+}
+
+.right-icons {
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.right-bar {
+    width: 120px;
+}
+
+
+
+
+
+
+
 /* END Player rules */
 
 /* Media querries */
