@@ -438,7 +438,7 @@ input {
 .center-player {
     flex-direction: column;
     align-items: center;
-    width: 550px;
+    width: 40vw;
     
     gap: 12px;
 }
@@ -488,6 +488,7 @@ input {
 .center-bar {
     justify-content: space-between;
     gap:8px;
+    /* width: 100%; */
 }
 
 .time {
@@ -496,7 +497,7 @@ input {
 }
 
 .center-bar input {
-    width: calc(550px - 32px - 16px);
+    width: calc(40vw - 32px - 16px);
 }
 
 
@@ -510,7 +511,7 @@ input {
     width: 230px;
 
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 25px;
 
 }
 
