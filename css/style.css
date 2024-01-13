@@ -360,27 +360,36 @@ nav a {
 
 .player .container {
     justify-content: space-between;
-    align-items: center;
 
     height: 100%;
     width: 100%;
 }
 
-/* common rule */
-
-.player-icons {
-    justify-content: center;
-    align-items: center;
-
-    width: 20px;
-    height: 20px;
-
-    background-color: red;
-} 
+/* common rule icons right-left and input */
 
 .player-icons i {
+
     color: white;
+    font-size: 15px;
+
+    font-size: 15px;
+    
+}
+
+left-icons .player-icons i {
     opacity: 0.7;
+    
+}
+
+input {
+    -webkit-appearance: none;
+    cursor: pointer;
+    
+    background: white;
+    
+    height: 4px;
+    
+    background-color: #5A5A5A;
 }
 
 /* Left player */
@@ -393,10 +402,6 @@ nav a {
     padding-right: 10px;
 
     width: 230px;
-    
-
-     /* test */
-    color: pink;
 }
 
 
@@ -421,14 +426,79 @@ nav a {
     opacity: 0.7;
 }
 
+.left-album span {
+    color: white;
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+
+
 /* Center player */
 
 .center-player {
+    flex-direction: column;
+    align-items: center;
     width: 550px;
-
-    /* test */
-    color: green;
+    
+    gap: 12px;
 }
+
+/* Icons player */
+
+.center-icons {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    width: 230px;
+    
+}
+
+.var-icon {
+    gap: 20px;
+}
+
+.center-icon i {
+    font-size: 20px;
+
+    color: white;
+}
+
+.play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    border: 2px white solid;
+    border-radius: 50%;
+    color: white;
+
+}
+
+.center-icon:nth-of-type(3) i {
+    font-size: 20px;
+    
+ 
+}
+
+/* bar music time */
+
+.center-bar {
+    justify-content: space-between;
+    gap:8px;
+}
+
+.time {
+   font-size: 0.7em;
+   color: white;
+}
+
+.center-bar input {
+    width: calc(550px - 32px - 16px);
+}
+
 
 /* Right player */
 
@@ -442,10 +512,6 @@ nav a {
     padding-left: 10px;
     padding-right: 10px;
 
-    
-
-     /* test */
-    color: pink;
 }
 
 .right-icons {
@@ -454,18 +520,14 @@ nav a {
     gap: 15px;
 }
 
-
 .right-bar {
     width: 120px;
 }
 
-.right-bar input {
-    width: 100%;
+.loading {
+    display: flex;
+    align-items: center;
 }
-
-
-
-
 
 
 
