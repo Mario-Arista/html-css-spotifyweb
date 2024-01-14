@@ -381,7 +381,7 @@ left-icons .player-icons i {
     
 }
 
-input {
+/* input {
     -webkit-appearance: none;
     cursor: pointer;
     
@@ -390,7 +390,7 @@ input {
     height: 4px;
     
     background-color: #5A5A5A;
-}
+} */
 
 /* Left player */
 
@@ -620,6 +620,68 @@ input {
         width: calc(100% / 2 - 10px / 2);
     }
 
+
+    /* Player changing dimension right and left parts */
+
+    .left-player {
+        justify-content: flex-start;
+        gap:20px;
+
+        width: calc(100%/3);
+
+        padding: 0px;
+    }
+
+    .left-icons {
+        flex-direction: column;
+    }
+
+    .right-player {
+        justify-content: flex-end;
+        width: calc(100% / 3);
+        
+        
+    }
+
+    .right-icons {
+        gap: 10px;
+    }
+
+    .right-bar input {
+        width: 100%;
+    }
+
+    .center-player {
+        width: calc(100% / 3);
+    }
+
+    .center-icons {
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .center-bar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .center-bar input {
+        width: 23vw;
+    }
+
+    .center-icon i {
+        font-size: 15px;
+    
+    }
+    
+    .play-icon {
+        width: 30px;
+        height: 30px;
+    
+        border: 2px white solid;
+    
+    }   
 }
 
 /* Mobile: down to 480px */
@@ -660,5 +722,55 @@ input {
     .upgrade {
         margin-right: 10px;
     }
+
+    /* Rules for player */
+
+    .left-player {
+        gap: 10px;
+        width: 30%;
+        padding-right: 10px;
+
+    }
+
+    .left-album img {
+        width: 30px;
+    }
+
+    .left-album span {
+        font-size: 0.7;
+    }
+
+    .right-player {
+        width: 30%;
+        padding-right: 10px;
+    }
+    .center-player {
+        width: 40%;
+    }
+
+    .right-icons {
+        gap: 5px;
+    }
+
+    .center-icons {
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .center-bar input {
+        width: 25vw;
+    }
+
+    .center-icon i {
+        font-size: 15px;
+    
+    }
+    
+    .play-icon {
+        width: 20px;
+        height: 20px;
+    
+    }   
 
 }
