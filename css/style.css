@@ -100,6 +100,18 @@ aside ul:first-of-type li:not(:first-of-type) {
 
 /* Green border home */
 
+.green {
+    position: relative;
+    right: 19px;
+    border-left: #B1FF32 2px solid;
+
+}
+
+.green .icons-aside,
+.green div {
+    position: relative;
+    left: 19px;
+}
 
 /* Home, search, library and Playlist */
 
