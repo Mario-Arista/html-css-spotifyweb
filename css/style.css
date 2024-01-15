@@ -18,16 +18,56 @@ body {
 }
 
 .hidden {
+
     display: none;
 }
 
-/* Hover */
+/* Hover rules */
+
+/* Nav in the main */
 
 nav a:hover::after {
     
     background-color: #B1FF32;
     border: #B1FF32 2px solid;
 }
+
+/* Album */
+
+.hiddden-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+
+}
+
+.album-img,
+.sug-album {
+    position: relative;
+}
+
+.hiddden-player i {
+    font-size: 50px;
+    color: white;
+}
+
+.album:hover img,
+.sug-album:hover img {
+    filter:grayscale(1)
+    
+}
+
+.album:hover .hiddden-player,
+.sug-album:hover .hiddden-player {
+    
+    display: block;
+}
+
+
+/* END Hover rules */
 
 /* Aside rules */
 
