@@ -24,6 +24,19 @@ body {
 
 /* Hover rules */
 
+
+
+/* Aside hover */
+
+.title-playlist:hover {
+    opacity: 1;
+}
+
+aside ul li:hover {
+
+    opacity: 1;
+}
+
 /* Nav in the main */
 
 main nav a:hover {
@@ -114,41 +127,44 @@ aside .container {
 
 /* Aside text */
 
-aside ul:first-of-type li:not(:first-of-type) {
+aside ul li {
     list-style: none;
     color: white;
     opacity: 0.7;
 }
 
-.aside-text,
-.install-text {
-    display: inline;
-    vertical-align: middle;
+
+
+aside .aside-text,
+aside .install-text {
+
+    
+    
     font-size: 12px;
     font-weight: bold;
 
 }
 
-.white-text {
-    display: inline;
-    vertical-align: middle;
+aside .white-text {
+    
+    padding-top: 4px;
     font-weight: bold;
     font-size: 14px;
 
     color: white;
 }
 
-.playlist .white-text {
+aside .playlist .white-text {
     font-size: 15px;
 }
 
-.title-playlist,
-.install-text {
+aside .title-playlist,
+aside aside .install-text {
     color: white;
     opacity: 0.7;
 }
 
-.download .white-text {
+aside .download .white-text {
     padding-left: 10px;
 }
 
@@ -156,7 +172,7 @@ aside ul:first-of-type li:not(:first-of-type) {
 
 .green {
     position: relative;
-    right: 19px;
+    right: 18px;
     border-left: #B1FF32 2px solid;
 
 }
@@ -164,7 +180,7 @@ aside ul:first-of-type li:not(:first-of-type) {
 .green .icons-aside,
 .green div {
     position: relative;
-    left: 19px;
+    left: 18px;
 }
 
 /* Home, search, library and Playlist */
@@ -175,14 +191,29 @@ aside .container ul {
     gap: 12px;
 }
 
+.home-search li {
+    align-items: center;
+    gap: 5px;
+
+}
+.playlist {
+    flex-direction: column;
+    gap: 10px;
+}
+
 .playlist ul {
     gap: 20px;
     max-height: 300px;
-
-    overflow-y: auto;
-
 }
 
+.title-playlist {
+    align-items: center;
+    gap: 5px;
+}
+
+.playlist ul li {
+    padding-bottom: 10px;
+}
 
 .icons-aside {
     width: 20px;
@@ -210,6 +241,16 @@ aside .container ul {
 
     width: 190px;
 }
+.account .download {
+    align-items: center;
+    gap: 10px;
+}
+
+.account .download .install-text {
+    color: white;
+    opacity: 0.7;
+
+}
 
 .account .download img {
     width: 15px;
@@ -217,6 +258,8 @@ aside .container ul {
 }
 
 .johndoe {
+    align-items: center;
+    gap: 10px;
     padding-top: 10px;
     border-top: solid white 1px;
 }
@@ -226,6 +269,8 @@ aside .container ul {
     border-radius: 50%;
     background-color: #808080;
 }
+
+
 
 
 /* Playlist */
@@ -351,7 +396,7 @@ nav a::after {
 }
 
 .recently-played h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 
     margin-bottom: 25px;
