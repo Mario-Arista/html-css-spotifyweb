@@ -70,6 +70,9 @@ main nav a:hover::after {
     display: block;
 }
 
+.upgrade:hover a {
+    font-size: 18px;
+}
 
 /* END Hover rules */
 
@@ -287,7 +290,7 @@ section:first-child .container {
 
     padding: 12px 40px;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 
     color: white;
@@ -723,6 +726,10 @@ left-icons .player-icons i {
         font-weight: bold;
     
         color: white;
+    }
+
+    .upgrade:hover a {
+        font-size: 12px;
     }
 
 }
