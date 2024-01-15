@@ -10,6 +10,10 @@
     <!-- Font awesome 4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,72 +23,84 @@
     width fixed at 230px, not for mobile: collapsed -->
     <aside>
 
-        <div class="logo-contain">
-            <img class="collapsed" src="./img/logo.svg" alt="extended logo">
-            <img class="hidden" src="./img/logo-small.svg" alt="logo small">
-        </div>
-
-
         <div class="container flex">
 
-            <ul class="flex">
-                <li>
-                    <img class="icons-aside" src="./img/home.svg" alt="">
-                    <div class="aside-text collapsed">Home</div>
-                </li>
-                <li>
-                    <img class="icons-aside" src="./img/search.svg" alt="">
-                    <div class="aside-text collapsed">Cerca</div>
-                </li>
-                <li>
-                    <img class="icons-aside" src="./img/libreria.svg" alt="">
-                    <div class="aside-text collapsed">La tua libreria</div>
-                </li>
-            </ul>
+            <div id="logo-playlist" class="flex">
 
-            <div class="playlist collapsed">
-
-                <div>PLAYLIST</div>
-
-                <div class="title-playlist">
-                    <i class="fa fa-plus-square" aria-hidden="true"></i>
-                    <div class="aside-text">Crea Playlist</div>
+                <div class="logo-contain">
+                    <img class="collapsed" src="./img/logo.svg" alt="extended logo">
+                    <img class="hidden" src="./img/logo-small.svg" alt="logo small">
                 </div>
 
-                <ul class="overflow flex">
+                <ul class="home-search flex">
                     <li>
-                        <div class="aside-text">Nome Playlist</div>
+                        <img class="icons-aside" src="./img/home.svg" alt="">
+                        <div class="white-text collapsed">Home</div>
                     </li>
                     <li>
-                        <div class="aside-text">Nome Playlist</div>
+                        <img class="icons-aside" src="./img/search.svg" alt="">
+                        <div class="aside-text collapsed">Cerca</div>
                     </li>
                     <li>
-                        <div class="aside-text">Nome Playlist</div>
-                    </li>
-                    <li>
-                        <div class="aside-text">Nome Playlist</div>
-                    </li>
-                    <li>
-                        <div class="aside-text">Nome Playlist</div>
-                    </li>
-                    <li>
-                        <div class="aside-text">Nome Playlist</div>
-                    </li>
-                    <li>
-                        <div class="aside-text">Nome Playlist</div>
-                    </li>
-                    <li>
-                        <div class="aside-text">Nome Playlist</div>
+                        <img class="icons-aside" src="./img/libreria.svg" alt="">
+                        <div class="aside-text collapsed">La tua libreria</div>
                     </li>
                 </ul>
 
+                <div class="playlist collapsed">
+
+                    <div class="white-text">PLAYLIST</div>
+
+                    <div class="title-playlist">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        <div class="aside-text">Crea Playlist</div>
+                    </div>
+
+                    <ul id="overfl flex">
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                        <li>
+                            <div class="aside-text">Nome Playlist</div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="account flex">
+                <div class="download">
+                    <img class="icons-aside" src="./img/download.svg" alt="">
+                    <div class="install-text collapsed">Installa app</div>
+                    
+                </div>
+    
+                <div class="johndoe">
+                    <img class="icons-aside" src="./img/profile.svg" alt="">
+                    <div class="white-text collapsed">John Doe</div>
+                </div>
+                
             </div>
 
         </div>
 
-        <div class="account collapsed flex">
 
-        </div>
 
     </aside>
 
@@ -133,6 +149,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/metal_lifting.jpg" alt="immagine album">
+                            <i class="hidden fa fa-play-circle-o"></i>
                         </div>
                         <h3>Heavy Metal</h3>
                         <div>Subtitle</div>
@@ -141,6 +158,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/stranger.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                         <div>Kyle Dixon & Michael Stein</div>
@@ -149,6 +167,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/aquietplace.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>A quiet place</h3>
                         <div>Subtitle</div>
@@ -157,6 +176,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/split.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Split</h3>
                         <div>Subtitle</div>
@@ -165,6 +185,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/cure.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>A cure for wellness</h3>
                         <div>Subtitle</div>
@@ -173,6 +194,7 @@
                     <div class="album flex">
                         <div class="album-img">
                             <img src="./img/sinister.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Sinister</h3>
                         <div>Subtitle</div>
@@ -199,6 +221,7 @@
                     <div class="sug-album flex">
                         <div class="album-img">
                             <img src="./img/radar.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Release Radar</h3>
                     </div>
@@ -206,6 +229,7 @@
                     <div class="sug-album flex">
                         <div class="album-img">
                             <img src="./img/mixdaily.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Daily Mix 1</h3>
                     </div>  
@@ -230,6 +254,7 @@
                     <div class="sug-album flex">
                         <div class="album-img circle">
                             <img src="./img/youg.jpeg" alt="immagine album">
+                            <i class="fa fa-play-circle-o hidden"></i>
                         </div>
                         <h3>Lana del Rey</h3>
                     </div>
@@ -237,6 +262,7 @@
                     <div class="sug-album flex">
                         <div class="album-img circle">
                             <img src="./img/einaudi.jpeg" alt="immagine album">
+                            <i class=" hidden fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <h3>Ludovico Einaudi</h3>
                     </div>  

@@ -8,6 +8,11 @@
 
 /* Common rules */
 
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+
 .flex {
     display: flex;
 }
@@ -26,28 +31,77 @@ aside {
     left: 0px;
 
     z-index: 1;
+    overflow-y: hidden;
 
     width: 230px;
     height: calc(100% - 90px);
     
     background-color: #000000;
+    
 }
-
-
-.logo-contain {
-    margin-left: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 130px;
-}
-
-/* Home, search, library and Playlist */
 
 aside .container {
     flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
     padding-left: 20px;
+
+    height: 100%;
 }
+
+#logo-playlist {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo-contain {
+    padding-top: 20px;
+    width: 130px;
+}
+
+/* Aside text */
+
+aside ul:first-of-type li:not(:first-of-type) {
+    list-style: none;
+    color: white;
+    opacity: 0.7;
+}
+
+.aside-text,
+.install-text {
+    display: inline;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.white-text {
+    display: inline;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px;
+
+    color: white;
+}
+
+.playlist .white-text {
+    font-size: 15px;
+}
+
+.title-playlist,
+.install-text {
+    color: white;
+    opacity: 0.7;
+}
+
+.download .white-text {
+    padding-left: 10px;
+}
+
+/* Green border home */
+
+
+/* Home, search, library and Playlist */
 
 aside .container ul {
     flex-direction: column;
@@ -55,41 +109,19 @@ aside .container ul {
     gap: 12px;
 }
 
-aside li {
-    list-style: none;
+.playlist ul {
+    gap: 20px;
+    max-height: 300px;
 
-    color: white;
-    opacity: 0.7;
+    overflow-y: auto;
+
 }
+
 
 .icons-aside {
     width: 20px;
     vertical-align: middle;
 } 
-
-.aside-text {
-    display: inline;
-    font-size: 10px;
-    font-weight: bold;
-    vertical-align: middle;
-}
-
-.playlist div:first-child {
-    
-    padding-bottom: 12px;
-
-    color: white;
-    opacity: 0.7;
-}
-
-.title-playlist {
-    padding-bottom: 15px;
-    vertical-align: middle;
-
-    font-size: 14px;
-    color: white;
-    opacity: 0.7;
-}
 
 .title-playlist i {
     padding-right: 8px;
@@ -101,8 +133,32 @@ aside li {
     opacity: 0.7;
 }
 
-aside .overflow {
-    overflow-y: auto;
+/* Account part*/
+
+.account {
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    width: 190px;
+}
+
+.account .download img {
+    width: 15px;
+
+}
+
+.johndoe {
+    padding-top: 10px;
+    border-top: solid white 1px;
+}
+
+.account .johndoe img {
+    width: 25px;
+    border-radius: 50%;
+    background-color: #808080;
 }
 
 
@@ -723,7 +779,7 @@ left-icons .player-icons i {
         width: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 4px;
+        margin-top: 10px;
 
     }
 
@@ -733,6 +789,18 @@ left-icons .player-icons i {
 
     aside .container ul {
         align-items: center;
+    }
+
+    .account {
+        align-items: center;
+        padding-left: 5px;
+
+        width: 40px;
+    }
+
+    .johndoe { 
+        border-top: none;
+        
     }
 
     /* Rules upgrade part */
