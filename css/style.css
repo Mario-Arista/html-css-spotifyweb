@@ -26,7 +26,11 @@ body {
 
 /* Nav in the main */
 
-nav a:hover::after {
+main nav a:hover {
+    opacity: 1;
+}
+
+main nav a:hover::after {
     
     background-color: #B1FF32;
     border: #B1FF32 2px solid;
@@ -299,7 +303,7 @@ section:last-of-type {
 
 /* Nav inside the Main */
 
-nav .container {
+main nav .container {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -316,13 +320,14 @@ nav .container {
     max-width: 620px;
 }
 
-nav a {
+main nav a {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     text-decoration: none;
 
-    color: #7D7F84;
+    color: white;
+    opacity: 0.7;
     font-size: 12px;
 }
 
