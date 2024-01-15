@@ -25,7 +25,6 @@ body {
 /* Hover rules */
 
 
-
 /* Aside hover */
 
 .title-playlist:hover {
@@ -86,6 +85,18 @@ main nav a:hover::after {
 .upgrade:hover a {
     font-size: 18px;
 }
+
+/* Player */
+
+.player span:hover {
+    text-decoration: underline;
+}
+
+.left-player i:hover,
+.right-player i:hover {
+    color: white;
+}
+
 
 /* END Hover rules */
 
@@ -546,16 +557,17 @@ nav a::after {
 .player-icons i {
 
     color: white;
+    opacity: 1;
     font-size: 15px;
 
     font-size: 15px;
     
 }
 
-left-icons .player-icons i {
+/* left-icons .player-icons i {
     opacity: 0.7;
     
-}
+} */
 
 /* input {
     -webkit-appearance: none;
@@ -598,9 +610,17 @@ left-icons .player-icons i {
     justify-content: space-around;
     gap: 10px;
 
+
+}
+
+.left-icons i {
+    color: grey;
+}
+/* 
+.left-icons i {
     color: white;
     opacity: 0.7;
-}
+} */
 
 .left-album span {
     color: white;
@@ -697,12 +717,15 @@ left-icons .player-icons i {
     gap: 15px;
 }
 
+.right-icons i {
+    color: grey;
+}
+
 .right-bar {
     width: 120px;
 }
 
 .loading {
-    display: flex;
     align-items: center;
 }
 
